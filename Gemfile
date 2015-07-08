@@ -14,8 +14,13 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 end
 
 group :development, :test do
-  gem 'byebug'
-  gem 'web-console', '~> 2.0'
-  gem 'spring'
+     gem 'sqlite3'
 end
 
+group :production do
+	gem 'pg'
+	gem 'rails_12factor'
+
+group :doc do
+     gem 'sdoc', require:false
+end
