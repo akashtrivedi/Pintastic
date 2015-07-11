@@ -1,11 +1,10 @@
 <div class="jumbotron center">
-	<h1>Welcome to my app!</h1>
-	<% if user_signed_in? %>
-		# do something
-	<% else %>
-	  <p>
-	    <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %>
-	   	<%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
-	  </p> 
-  <% end %>   
+	<h1> PINTASTIC </h1>
+	<h4> A Fantastic way to pin things you like on web! </h4>
+	<center><img src="https://dl.dropboxusercontent.com/u/14374004/pinterest-featured.png" style="width:600px; height:350px;" ></center>
+	<p></p>
+     <p>
+       <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %>
+       <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+  </p>    
 </div>
